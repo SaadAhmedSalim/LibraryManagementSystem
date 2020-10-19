@@ -55,7 +55,7 @@ form {
 	border-radius: 5px;
 }
 
-.registerbtn {
+.registerbtn,loginbtn {
 	padding: 10px;
 	color: white;
 	background: #5f9ea0;
@@ -63,4 +63,16 @@ form {
 	border: none;
 	font-size: 18px;
 	cursor: pointer;
+}
+
+
+.error {
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid #a94442;
+	color: #a94442;
+	background: #f2dede;
+	border-radius: 5px;
+	text-align: left;
 }
