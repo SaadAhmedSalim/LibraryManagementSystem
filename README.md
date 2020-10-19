@@ -12,3 +12,9 @@ October 18, 2020
 - Normal Sign up Page made
 
 - MySQL server testing - ok
+
+October 18, 2020
+
+- Sign up And Login Page made
+
+- MySQL server testing - ok
