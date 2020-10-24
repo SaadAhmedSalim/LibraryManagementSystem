@@ -24,15 +24,21 @@
 </head>
 
 <body>
+	<!-- <img src="b1.jpg"> -->
+
 
 <!-- Sign Up Starts-->
+	
 
-	<div class="header">
-		<h2>Register Here</h2>
-	</div>
-		
+
+	
+
 	<form method="post" action="signup.php">
 		<!-- Display validation errors here -->
+		<div class="header">
+
+		<h2>Register Here</h2>
+		</div>
 		<?php include('errors.php'); ?>
 
 		<div class="input-group">
@@ -84,11 +90,11 @@
    			<p>Already have an account? <a href="login.php">Sign in</a>.</p>
  		</div>
 	</form>
-
+	
 <!-- Sign Up Ends -->
 
 
-<footer id="main-footer">
+<footer id="main-footer" class="main-footer">
   <p>&copy; <i>Saad Ahmed Salim</i></p>
 </footer>
 

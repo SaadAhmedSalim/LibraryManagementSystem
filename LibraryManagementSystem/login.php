@@ -24,16 +24,26 @@
 </head>
 
 <body>
+<style>
+	.bg-img {
+	background-image: url("b1.jpg");
+	background-position: fixed;
+	background-repeat: no-repeat;
+	min-height: 600px;
+	margin-top: 0;
+}
 
+	
+	
+
+</style>
 <!-- Sign Up Starts-->
-
-	<div class="header">
-		<h2>Login Here</h2>
-	</div>
-		
+<div class="bg-img">
+				
 	<form method="post" action="login.php">
-		
-		<div class="input-group">
+		<div class="header"><h2>Login Here</h2>
+		</div>
+		  	    <div class="input-group">
 			<label for="username">User Name or Email</label>
 			<input type="text" id="username" name="username" required="">
 		</div>
@@ -52,6 +62,7 @@
    			<p>Don't have an account? <a href="signup.php">Sign Up</a>.</p>
  		</div>
 	</form>
+	</div>
 
 <!-- Sign Up Ends -->
 
