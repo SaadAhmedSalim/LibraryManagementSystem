@@ -79,7 +79,7 @@
 
 		<hr>
 
-   			<p class="para">By Creating An Account You Agree to Our <a href="#">Terms & Privacy</a>.</p>
+   			<p class="para">By Creating An Account You Agree to Our <a href="Terms&Privacy.php">Terms & Privacy</a>.</p>
    		
 
 		<div class="input-group">

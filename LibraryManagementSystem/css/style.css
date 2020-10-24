@@ -94,3 +94,29 @@ form {
 	border-radius: 5px;
 	text-align: left;
 }
+
+/*term and privacy form*/
+.tpforms {
+	position: absolute;
+	left: 100px; 
+	width: 80%;
+	margin: 50px auto;
+	background: white;
+	border: 1px solid #b0c4de;
+	border-radius: 10px 10px 10px 10px;
+	padding: 20px;
+
+}
+/*terms and privacy header*/
+.tpheader {
+	width: 30%;
+	margin: 10px auto 30px;
+	color: white;
+	background: #5f9ea0;
+	text-align: center;
+	text-orientation: center;
+	border: 2px solid #b0c4de;
+	border-bottom: none;
+	border-radius: 10px 10px 10px 10px;
+	padding: 0px;
+}
