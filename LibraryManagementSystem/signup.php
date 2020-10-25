@@ -93,11 +93,12 @@
 	
 <!-- Sign Up Ends -->
 
+<!--
 
 <footer id="main-footer" class="main-footer">
   <p>&copy; <i>Saad Ahmed Salim</i></p>
 </footer>
-
+-->
 </body>
 
 </html>

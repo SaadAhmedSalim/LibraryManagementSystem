@@ -1,5 +1,6 @@
+<?php include('server.php') ?>
+
 <?php
-session_start();
 if(!$_SESSION['username']){
 	echo "
 		<script>
@@ -7,7 +8,7 @@ if(!$_SESSION['username']){
 		</script>
 	";
 }
-?>
+?> 
 
 <!DOCTYPE html>
 <head>
@@ -38,9 +39,36 @@ if(!$_SESSION['username']){
     </ul>
   </div>
 </nav>
-<div class="admin-area">
-	<h1>Welcome to admin area</h1>
+
+<div class="admin-area"><h1>Add A Book</h1>
 </div>
 
+<form action="add_book.php" method="post">
+
+	<?php include('errors.php'); ?>
+
+			<div class="form-group">
+			<label>Enter Book Name:</label>
+			<input class="form-control" name="name" id="name" value="<?php echo $name; ?>" type="text"/>
+			</div>
+			<div class="form-group">
+			<label>Enter Book ISBN :</label>
+			<input class="form-control" name="isbn" type="text"/>
+			</div>
+			<div class="form-group">
+			<label>Enter Book Category :</label>
+			<input class="form-control" name="category" type="text"/>
+			</div>
+		<!--
+			<div class="form-group">
+			<label>Enter Book image :</label>
+			<input class="form-control" name="image" type="file" value="Enter an image"/>
+			</div>
+		-->
+
+			<input type="submit" name="addbook" class="btn btn-danger"/>
+		</form>
+
+		
 </body>
 </html>

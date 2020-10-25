@@ -1,4 +1,4 @@
- * {
+* {
 	margin: 0px;
 	padding: 0px;
 }
@@ -118,4 +118,37 @@ form {
 	border-bottom: none;
 	border-radius: 10px 10px 10px 10px;
 	padding: 0px;
+}
+
+
+/* For Home.php */
+
+.navbar {
+  background: #f1f3fe;
+  overflow: hidden;
+}
+
+
+
+.navbar .navbar-brand,
+.navbar li {
+  	float: left;
+  	font-size: 16px;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	list-style-type: none;
+}
+
+.navbar li:hover{
+  background-color: red;
+}
+
+.admin-area {
+	padding-left: 400px;
+	padding-top: 100px;
+	display: flex;
+	text-align: center;
+	font-size: 20px;
+	font-style: "Transitional serif";
 }

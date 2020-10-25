@@ -142,9 +142,69 @@ if (!$connection) {
       			$_SESSION['success'] = "Successfully Logged In";
       			header("location: home.php");
     		}else {
-      			array_push($errors, "Username/Password Wrong! Please Try Again.");
-    		}
+    			echo "<script>
+						alert('You are not authenticated!');
+					</script>";
+				}
 	 	 }
 
 	}
+
+
+	$bookname = "";
+	$isbn = "";
+	$cat = "";
+			
+
+
+
+	if(isset($_POST['addbook'])){
+			
+		$bookname = mysqli_real_escape_string($connection,$_POST['name']);
+		$isbn = mysqli_real_escape_string($connection,$_POST['isbn']);
+		$cat = mysqli_real_escape_string($connection,$_POST['category']);
+		//$image = $_FILES['image']['name'];
+		//$temp = "product_images/".$image;
+		//move_uploaded_file($_FILES['image']['name'], $temp);
+
+				    /* PROFILE UPLOAD   
+  				$pic=$_FILES['profile']['name'];
+  				$target = "profile_upload/".$pic;
+  				move_uploaded_file($_FILES['profile']['tmp_name'], $target);
+  				*/
+
+
+				//Ensure that forms fields are filled properly
+
+		if (empty($bookname)) {
+				array_push($errors, "Book Name is Required"); //add error when null found
+			}
+		if (empty($isbn)) {
+				array_push($errors, "Book ISBN is Required"); //add error when null found
+			}
+		if (empty($cat)) {
+				array_push($errors, "Category is Required"); //add error when null found
+			}
+		
+		if (count($errors) == 0) {
+				$query="INSERT INTO book (book_name, book_isbn, category) 
+								VALUES('$bookname','$isbn','$cat')";
+
+				$result = mysqli_query($connection, $query);
+
+/*
+					if($result == true){
+							echo '<script>alert("Book has been entered");</script>';
+						}
+						else{
+							echo '<script>alert("Something went wrong!");</script>';
+						} */
+			}
+		}
+
+
+
+
+
+
 ?>
