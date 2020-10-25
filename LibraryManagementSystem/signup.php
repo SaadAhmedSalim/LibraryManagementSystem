@@ -37,7 +37,7 @@
 		<!-- Display validation errors here -->
 		<div class="header">
 
-		<h2>Register Here</h2>
+		<h2>Sign Up</h2>
 		</div>
 		<?php include('errors.php'); ?>
 

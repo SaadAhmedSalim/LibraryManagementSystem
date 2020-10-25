@@ -41,7 +41,7 @@
 <div class="bg-img">
 				
 	<form method="post" action="login.php">
-		<div class="header"><h2>Login Here</h2>
+		<div class="header"><h2>Login</h2>
 		</div>
 		  	    <div class="input-group">
 			<label for="username">User Name or Email</label>
