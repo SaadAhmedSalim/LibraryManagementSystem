@@ -78,11 +78,6 @@ form {
 	cursor: pointer;
 }
 
-.main-footer{
-	position: absolute;
-	bottom: -250px;
-}
-
 
 .error {
 	width: 92%;
