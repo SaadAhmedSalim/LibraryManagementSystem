@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LMS</title>
+	<title>Library Management System</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
