@@ -13,13 +13,16 @@
   			height: 450px;
   		}
   	</style>
+
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.php">Library Management System</a>
 			</div>
+
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-item">
 					<a class="nav-link" href="admin/index.php">Admin Login</a>
@@ -31,6 +34,7 @@
 					<a class="nav-link" href="signup.php">Register</a>
 				</li>
 			</ul>
+
 		</div>
 	</nav><br>
 	<span><marquee>This is library Management System. Library opens at 8:00 AM and close at 8:00 PM</marquee></span><br><br>
@@ -55,14 +59,17 @@
 		<div class="col-md-8" id="main_content">
 			<center><h3>User Login Form</h3></center>
 			<form action="" method="post">
+
 				<div class="form-group">
 					<label for="name">Email ID:</label>
 					<input type="text" name="email" class="form-control" required>
 				</div>
+
 				<div class="form-group">
 					<label for="name">Password:</label>
 					<input type="password" name="password" class="form-control" required>
 				</div>
+
 				<button type="submit" name="login" class="btn btn-primary">Login</button>
 			</form>
 
@@ -91,6 +98,9 @@
 				}
 			?>
 	</div>
+	
 	</div>
+
 </body>
+
 </html>

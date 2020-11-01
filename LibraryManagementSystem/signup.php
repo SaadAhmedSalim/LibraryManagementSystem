@@ -12,6 +12,7 @@
   			height: 450px;
   		}
   	</style>
+
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -58,22 +59,27 @@
 					<label for="name">Full Name:</label>
 					<input type="text" name="name" class="form-control" required>
 				</div>
+
 				<div class="form-group">
 					<label for="name">Email ID:</label>
 					<input type="text" name="email" class="form-control" required>
 				</div>
+
 				<div class="form-group">
 					<label for="name">Password:</label>
 					<input type="password" name="password" class="form-control" required>
 				</div>
+
 				<div class="form-group">
 					<label for="name">Mobile Number:</label>
 					<input type="text" name="mobile" class="form-control" required>
 				</div>
+
 				<div class="form-group">
 					<label for="name">Address:</label>
 					<textarea rows="3" cols="40" class="form-control" name="address"></textarea>
 				</div>
+				
 				<button type="submit" class="btn btn-primary">Register</button>
 			</form>
 	</div>
