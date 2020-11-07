@@ -1,24 +1,30 @@
 <?php
 	session_start();
-	function get_user_issue_book_count(){
-		$connection = mysqli_connect("localhost","root","");
-		$db = mysqli_select_db($connection,"library");
-		$user_issue_book_count = 0;
-		$query = "select count(*) as user_issue_book_count from issued_books where student_id = $_SESSION[id]";
-		$query_run = mysqli_query($connection,$query);
-		while($row = mysqli_fetch_assoc($query_run)){
-			$user_issue_book_count = $row['user_issue_book_count'];
+
+	$connection = mysqli_connect("localhost","root","");
+	$db = mysqli_select_db($connection,"library");
+	$name = "";
+	$email = "";
+	$mobile = "";
+	$address = "";
+	$query = "select * from users where email = '$_SESSION[email]'";
+	$query_run = mysqli_query($connection,$query);
+
+	while($row = mysqli_fetch_assoc($query_run)){
+		$name = $row['name'];
+		$email = $row['email'];
+		$mobile = $row['mobile'];
+		$address = $row['address'];
 	}
-	return($user_issue_book_count);
-}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>User Dashboard</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-  	<style type="text/css">
+	<style type="text/css">
   		#side_bar{
   			background-color: whitesmoke;
   			padding: 50px;
@@ -26,12 +32,14 @@
   			height: 450px;
   		}
   	</style>
+
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.php">Library Management System</a>
+				<a class="navbar-brand" href="user_dashboard.php">Library Management System</a>
 			</div>
 			<font style="color: white"><span><strong>Welcome: <?php echo $_SESSION['name'];?></strong></span></font>
 			<font style="color: white"><span><strong>Email: <?php echo $_SESSION['email'];?></strong></span></font>
@@ -50,18 +58,35 @@
 	</nav><br>
 	<span><marquee>This is library Management System. Library opens at 8:00 AM and close at 8:00 PM</marquee></span><br><br>
 	<div class="row">
-		<div class="col-md-3">
-			<div class="card bg-light" style="width: 300px">
-				<div class="card-header">Issued Books:</div>
-				<div class="card-body">
-					<p class="card-text">No. of Issued Books: <?php echo get_user_issue_book_count();?> </p>
-					<a href="view_issuedbook.php" class="btn btn-danger" target="_blank">View Issued Books</a>
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<form action="update.php" method="post">
+				
+				
+				<div class="form-group">
+					<label>Name:</label>
+					<input type="text" class="form-control" value="<?php echo $name;?>" name="name">
 				</div>
-			</div>
+				
+				<div class="form-group">
+					<label>Email:</label>
+					<input type="text" class="form-control" value="<?php echo $email;?>" name="email">
+				</div>
+				
+				<div class="form-group">
+					<label>Mobile:</label>
+					<input type="text" class="form-control" value="<?php echo $mobile;?>" name="mobile">
+				</div>
+				
+				<div class="form-group">
+					<label>Address:</label>
+					<textarea rows="3" cols="40" name="address" class="form-control"><?php echo $address;?></textarea>
+				</div>
+				
+				<button  type="submit" name="update" class="btn btn-primary">Update</button>
+			</form>
 		</div>
-		<div class="col-md-3"></div>
-		<div class="col-md-3"></div>
-		<div class="col-md-3"></div>
+		<div class="col-md-4"></div>
 	</div>
 </body>
 </html>
