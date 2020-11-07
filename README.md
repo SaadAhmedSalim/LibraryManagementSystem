@@ -1,9 +1,11 @@
 # LibraryManagementSystem <img src="https://wakatime.com/badge/github/SaadAhmedSalim/LibraryManagementSystem.svg" />
 I along with my friend will build this project, only with pure html, css, php and js.
 
-Operating System : Linux Ubuntu 20.04
+Operating System : Linux Ubuntu 20.04, Windows 10
 
-Editor : Sublime Text
+
+
+Editor : Sublime Text, Atom
 
 Working Flow ~
 
@@ -60,4 +62,10 @@ November 1, 2020
 - User Profile View, Edit, Change Password Page made
 
 - MySQL server testing - update.php need to be fixed
+
+November 7, 2020
+
+- View Issued Book Page made
+
+- MySQL server testing - ok
 
