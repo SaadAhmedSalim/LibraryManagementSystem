@@ -3,6 +3,7 @@
 	padding: 0px;
 }
 
+
 body {
 	font-size: 120%;
 	background: #f8f8ff;
@@ -35,18 +36,19 @@ body {
 	left: 400px;
 	border: 1px solid #b0c4de;
 	border-radius: 0px 0px 10px 10px;
-	padding: 20px;	
+	padding: 20px;
 }
 */
 form {
 	position: absolute;
-	left: 400px; 
+	top: 200px;
+	left: 450px;
 	width: 35%;
 	margin: 50px auto;
 	background: white;
 	border: 1px solid #b0c4de;
 	border-radius: 10px 10px 10px 10px;
-	padding: 20px;	
+	padding: 20px;
 }
 
 .input-group {
@@ -93,7 +95,7 @@ form {
 /*term and privacy form*/
 .tpforms {
 	position: absolute;
-	left: 100px; 
+	left: 100px;
 	width: 80%;
 	margin: 50px auto;
 	background: white;

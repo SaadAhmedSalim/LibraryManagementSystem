@@ -18,7 +18,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.php">Library Management System(LMS)</a>
+				<a class="navbar-brand" href="index.php">Library Management System</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-item">
@@ -51,7 +51,7 @@
 				<li>RO Water</li>
 				<li>Peacefull Environment</li>
 			</ul>
-		</div>		
+		</div>
 		<div class="col-md-8" id="main_content">
 			<center><h3>User Registration Form</h3></center>
 			<form action="register.php" method="post">
@@ -79,7 +79,7 @@
 					<label for="name">Address:</label>
 					<textarea rows="3" cols="40" class="form-control" name="address"></textarea>
 				</div>
-				
+
 				<button type="submit" class="btn btn-primary">Register</button>
 			</form>
 	</div>

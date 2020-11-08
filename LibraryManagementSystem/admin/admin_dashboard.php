@@ -23,8 +23,8 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.php">Library Management System</a>
 			</div>
-			<font style="color: white"><span><strong>Welcome: <?php echo $_SESSION['name'];?></strong></span></font>
-			<font style="color: white"><span><strong>Email: <?php echo $_SESSION['email'];?></strong></span></font>
+			<font style="color: black"><span><strong>Welcome: <?php echo $_SESSION['name'];?></strong></span></font>
+			<font style="color: black"><span><strong>Email: <?php echo $_SESSION['email'];?></strong></span></font>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown">My Profile</a>

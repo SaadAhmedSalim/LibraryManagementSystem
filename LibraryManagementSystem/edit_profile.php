@@ -41,8 +41,8 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="user_dashboard.php">Library Management System</a>
 			</div>
-			<font style="color: white"><span><strong>Welcome: <?php echo $_SESSION['name'];?></strong></span></font>
-			<font style="color: white"><span><strong>Email: <?php echo $_SESSION['email'];?></strong></span></font>
+			<font style="color: blue"><span><strong>Welcome: <?php echo $_SESSION['name'];?></strong></span></font>
+			<font style="color: blue"><span><strong>Email: <?php echo $_SESSION['email'];?></strong></span></font>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown">My Profile</a>
@@ -61,28 +61,28 @@
 		<div class="col-md-4"></div>
 		<div class="col-md-4">
 			<form action="update.php" method="post">
-				
-				
+
+
 				<div class="form-group">
 					<label>Name:</label>
 					<input type="text" class="form-control" value="<?php echo $name;?>" name="name">
 				</div>
-				
+
 				<div class="form-group">
 					<label>Email:</label>
 					<input type="text" class="form-control" value="<?php echo $email;?>" name="email">
 				</div>
-				
+
 				<div class="form-group">
 					<label>Mobile:</label>
 					<input type="text" class="form-control" value="<?php echo $mobile;?>" name="mobile">
 				</div>
-				
+
 				<div class="form-group">
 					<label>Address:</label>
 					<textarea rows="3" cols="40" name="address" class="form-control"><?php echo $address;?></textarea>
 				</div>
-				
+
 				<button  type="submit" name="update" class="btn btn-primary">Update</button>
 			</form>
 		</div>
