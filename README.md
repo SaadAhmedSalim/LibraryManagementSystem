@@ -69,3 +69,10 @@ November 7, 2020
 
 - MySQL server testing - ok
 
+December 10, 2020
+
+- Admin Change password and database updated work done
+
+- User dashboard issue fixed and updated
+
+
