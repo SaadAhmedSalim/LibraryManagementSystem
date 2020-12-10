@@ -76,7 +76,7 @@
 	<div class="col-md-2"></div>
 	<div class="col-md-8">
 		<form>
-			<table class="table-bordered" width="900px" style="text-align: center">
+			<table class="table-bordered" width="500px" style="text-align: center">
 				<tr>
 					<th>Book Name:</th>
 					<th>Book Author:</th>
