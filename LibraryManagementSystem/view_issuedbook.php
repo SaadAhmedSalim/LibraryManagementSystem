@@ -5,7 +5,7 @@
 	$book_name = "";
 	$author = "";
 	$book_no = "";
-	$query = "select book_name,book_author,book_no from issued_books where student_id = $_SESSION[id] and status = 1";
+	$query = "SELECT book_name,book_author,book_no FROM issued_books WHERE student_id = $_SESSION[id] AND status = 1";
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,31 +47,25 @@
 	<div class="container-fluid">
 		<ul class="nav navbar-nav navbar-center">
 			<li class="nav-item">
-				<a href="admin_dashboard.php" class="nav-link">Dashboard</a>
+				<a href="user_dashboard.php" class="nav-link">Dashboard</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" data-toggle="dropdown">Book</a>
 				<div class="dropdown-menu">
-					<a href="" class="dropdown-item">Add New Book</a>
-					<a href="" class="dropdown-item">Manage Books</a>
+					<a href="" class="dropdown-item">Search Books</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" data-toggle="dropdown">Category</a>
 				<div class="dropdown-menu">
-					<a href="" class="dropdown-item">Add New Category</a>
-					<a href="" class="dropdown-item">Manage Category</a>
+					<a href="" class="dropdown-item">Search Category</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" data-toggle="dropdown">Author</a>
 				<div class="dropdown-menu">
-					<a href="" class="dropdown-item">Add New Author</a>
-					<a href="" class="dropdown-item">Manage Authors</a>
+					<a href="" class="dropdown-item">Search Author</a>
 				</div>
-			</li>
-			<li class="nav-item">
-				<a href="" class="nav-link">Issue Book</a>
 			</li>
 		</ul>
 	</div>
