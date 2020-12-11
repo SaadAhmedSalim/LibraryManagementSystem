@@ -15,7 +15,7 @@
 		$connection = mysqli_connect("localhost","root","");
 		$db = mysqli_select_db($connection,"library");
 		$book_count = "";
-		$query = "select count(*) as book_count from books";
+		$query = "SELECT count(*) AS book_count FROM books";
 		$query_run = mysqli_query($connection,$query);
 		while($row = mysqli_fetch_assoc($query_run)){
 			$book_count = $row['book_count'];
@@ -27,7 +27,7 @@
 		$connection = mysqli_connect("localhost","root","");
 		$db = mysqli_select_db($connection,"library");
 		$cat_count = "";
-		$query = "select count(*) as cat_count from category";
+		$query = "SELECT count(*) AS cat_count FROM category";
 		$query_run = mysqli_query($connection,$query);
 		while($row = mysqli_fetch_assoc($query_run)){
 			$cat_count = $row['cat_count'];
